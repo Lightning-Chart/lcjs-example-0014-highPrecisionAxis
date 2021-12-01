@@ -109,12 +109,12 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[Lightning Chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/interfaces/lightningchart.html
-[Automatic axis ticks options]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/globals.html#axistickstrategies
-[Solid fill style]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/solidfill.html
-[Color factory RGBA]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/globals.html#colorrgba
-[Chart XY]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/chartxy.html
-[Axis XY]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/axis.html
-[Line Series XY]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/lineseries.html
-[Legend Box]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/chartxy.html#addlegendbox
+[Lightning Chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/interfaces/lightningchart.html
+[Automatic axis ticks options]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#axistickstrategies
+[Solid fill style]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/solidfill.html
+[Color factory RGBA]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#colorrgba
+[Chart XY]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/chartxy.html
+[Axis XY]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/axis.html
+[Line Series XY]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/lineseries.html
+[Legend Box]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/chartxy.html#addlegendbox
 
