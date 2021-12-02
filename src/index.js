@@ -48,7 +48,7 @@ chart.addLegendBox().add(chart)
     })
 
 // Fetch example data.
-fetch( document.head.baseURI + 'examples/assets/lcjs_example_0014_highPrecisionAxis-data.json' )
+fetch( document.head.baseURI + 'examples/assets/0014/data.json' )
     .then( r => r.json() )
     .then(data => {
         // Data X coordinates are in milliseconds starting from 0.
