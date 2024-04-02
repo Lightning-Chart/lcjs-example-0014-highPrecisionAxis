@@ -46,7 +46,7 @@ chart
     })
 
 // Fetch example data.
-fetch(document.head.baseURI + 'examples/assets/0014/data.json')
+fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'examples/assets/0014/data.json')
     .then((r) => r.json())
     .then((data) => {
         // Data X coordinates are in milliseconds starting from 0.
