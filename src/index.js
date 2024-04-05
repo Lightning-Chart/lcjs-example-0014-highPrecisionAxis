@@ -7,7 +7,9 @@ const lcjs = require('@arction/lcjs')
 // Extract required parts from LightningChartJS.
 const { lightningChart, AxisTickStrategies, Themes } = lcjs
 
-const chart = lightningChart()
+const chart = lightningChart({
+            resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
+        })
     .ChartXY({
         defaultAxisX: {
             type: 'linear-highPrecision',
