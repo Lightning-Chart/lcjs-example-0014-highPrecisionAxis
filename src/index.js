@@ -2,10 +2,10 @@
  * LightningChartJS example showcasing the High Precision Axis XY feature which allows zooming of microseconds precision without any dirty data transforming
  */
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
-const { lightningChart, AxisTickStrategies, Themes } = lcjs
+const { lightningChart, AxisTickStrategies, emptyFill, Themes } = lcjs
 
 const chart = lightningChart({
             resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
@@ -17,26 +17,23 @@ const chart = lightningChart({
     })
     .setTitle('High precision Axis XY (1 second high-resolution data)')
     .setPadding({ right: 40 })
+    .setCursorMode('show-all-interpolated')
 
 const axisX = chart.getDefaultAxisX().setTickStrategy(AxisTickStrategies.Time, (timeTicks) => timeTicks)
 
 const axisY = chart.getDefaultAxisY()
 
 const trace0 = chart
-    .addLineSeries({
-        dataPattern: {
-            pattern: 'ProgressiveX',
-        },
+    .addPointLineAreaSeries({
+        dataPattern: 'ProgressiveX',
     })
-    .setCursorInterpolationEnabled(true)
+    .setAreaFillStyle(emptyFill)
 
 const trace1 = chart
-    .addLineSeries({
-        dataPattern: {
-            pattern: 'ProgressiveX',
-        },
+    .addPointLineAreaSeries({
+        dataPattern: 'ProgressiveX',
     })
-    .setCursorInterpolationEnabled(true)
+    .setAreaFillStyle(emptyFill)
 
 chart
     .addLegendBox()
