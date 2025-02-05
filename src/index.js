@@ -16,7 +16,6 @@ const chart = lightningChart({
         },
     })
     .setTitle('High precision Axis XY (1 second high-resolution data)')
-    .setPadding({ right: 40 })
     .setCursorMode('show-all-interpolated')
 
 const axisX = chart.getDefaultAxisX().setTickStrategy(AxisTickStrategies.Time, (timeTicks) => timeTicks)
