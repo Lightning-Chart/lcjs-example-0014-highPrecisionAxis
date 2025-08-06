@@ -84,7 +84,6 @@ Here are reference tables to the achievable zoom range with normal Axis vs `High
 * [Chart XY]
 * [Axis XY]
 * [Line Series XY]
-* [Legend Box]
 
 
 ## Support
@@ -108,12 +107,11 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[Lightning Chart]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/functions/lightningChart-1.html
-[Automatic axis ticks options]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/variables/AxisTickStrategies.html
-[Solid fill style]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/SolidFill.html
-[Color factory RGBA]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/functions/ColorRGBA.html
-[Chart XY]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/ChartXY.html
-[Axis XY]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/Axis.html
-[Line Series XY]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/LineSeries.html
-[Legend Box]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/Chart.html#addLegendBox
+[Lightning Chart]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/functions/lightningChart-1.html
+[Automatic axis ticks options]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/variables/AxisTickStrategies.html
+[Solid fill style]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/classes/SolidFill.html
+[Color factory RGBA]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/functions/ColorRGBA.html
+[Chart XY]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/classes/ChartXY.html
+[Axis XY]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/classes/Axis.html
+[Line Series XY]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/classes/LineSeries.html
 

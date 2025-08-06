@@ -11,6 +11,7 @@ const chart = lightningChart({
             resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
         })
     .ChartXY({
+        legend: { visible: false },
         defaultAxisX: {
             type: 'linear-highPrecision',
         },
@@ -22,34 +23,17 @@ const axisX = chart.getDefaultAxisX().setTickStrategy(AxisTickStrategies.Time, (
 
 const axisY = chart.getDefaultAxisY()
 
-const trace0 = chart
-    .addPointLineAreaSeries({
-        dataPattern: 'ProgressiveX',
-    })
-    .setAreaFillStyle(emptyFill)
+const trace0 = chart.addLineSeries()
 
-const trace1 = chart
-    .addPointLineAreaSeries({
-        dataPattern: 'ProgressiveX',
-    })
-    .setAreaFillStyle(emptyFill)
-
-chart
-    .addLegendBox()
-    .add(chart)
-    // Dispose example UI elements automatically if they take too much space. This is to avoid bad UI on mobile / etc. devices.
-    .setAutoDispose({
-        type: 'max-width',
-        maxWidth: 0.3,
-    })
+const trace1 = chart.addLineSeries()
 
 // Fetch example data.
 fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'examples/assets/0014/data.json')
     .then((r) => r.json())
     .then((data) => {
         // Data X coordinates are in milliseconds starting from 0.
-        trace0.add(data['trace0'])
-        trace1.add(data['trace1'])
+        trace0.appendJSON(data['trace0'])
+        trace1.appendJSON(data['trace1'])
         axisX.fit(false)
 
         // Animate zoom in.
