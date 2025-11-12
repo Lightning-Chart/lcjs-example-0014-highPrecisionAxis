@@ -23,9 +23,13 @@ const axisX = chart.getDefaultAxisX().setTickStrategy(AxisTickStrategies.Time, (
 
 const axisY = chart.getDefaultAxisY()
 
-const trace0 = chart.addLineSeries()
+const trace0 = chart.addLineSeries(
+    { automaticColorIndex: 0 },
+)
 
-const trace1 = chart.addLineSeries()
+const trace1 = chart.addLineSeries(
+    { automaticColorIndex: 4 },
+)
 
 // Fetch example data.
 fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'examples/assets/0014/data.json')
