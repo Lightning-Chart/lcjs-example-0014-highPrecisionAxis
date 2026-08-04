@@ -24,14 +24,7 @@ This example showcases the `High Precision Axis XY` feature.
 An XY Axis can be marked with _high precision mode_ when it is created, similarly how _logarithmic axes_ are created.
 This example shows how it is done for default X Axis.
 
-```javascript
-const chart = lightningChart().ChartXY({
-    // Default Axis types can only be defined when chart is created.
-    defaultAxisX: {
-        type: 'linear-highPrecision',
-    },
-})
-```
+**EDIT: Since LCJS v9.0 all Axes are by default high precision.**
 
 _High precision Axis_ behaves just like a normal linear Axis, but with two technical differences:
 
@@ -107,11 +100,11 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2026. All rights reserved.
 
 
-[Lightning Chart]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/functions/lightningChart-1.html
-[Automatic axis ticks options]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/variables/AxisTickStrategies.html
-[Solid fill style]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/SolidFill.html
-[Color factory RGBA]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/functions/ColorRGBA.html
-[Chart XY]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/ChartXY.html
-[Axis XY]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/Axis.html
-[Line Series XY]: https://lightningchart.com/js-charts/api-documentation/v8.3.0/classes/PointLineAreaSeries.html
+[Lightning Chart]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/functions/lightningChart-1.html
+[Automatic axis ticks options]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/variables/AxisTickStrategies.html
+[Solid fill style]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/classes/SolidFill.html
+[Color factory RGBA]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/functions/ColorRGBA.html
+[Chart XY]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/classes/ChartXY.html
+[Axis XY]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/classes/Axis.html
+[Line Series XY]: https://lightningchart.com/js-charts/api-documentation/v9.0.0/classes/PointLineAreaSeries.html
 

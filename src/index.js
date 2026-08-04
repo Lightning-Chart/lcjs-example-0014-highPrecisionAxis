@@ -13,9 +13,6 @@ const chart = lightningChart({
         })
     .ChartXY({
         legend: { visible: false },
-        defaultAxisX: {
-            type: 'linear-highPrecision',
-        },
     })
     .setTitle('High precision Axis XY (1 second high-resolution data)')
     .setCursorMode('show-all-interpolated')
@@ -24,13 +21,9 @@ const axisX = chart.getDefaultAxisX().setTickStrategy(AxisTickStrategies.Time, (
 
 const axisY = chart.getDefaultAxisY()
 
-const trace0 = chart.addLineSeries(
-    { automaticColorIndex: 0 },
-)
+const trace0 = chart.addLineSeries({ automaticColorIndex: 0 })
 
-const trace1 = chart.addLineSeries(
-    { automaticColorIndex: 4 },
-)
+const trace1 = chart.addLineSeries({ automaticColorIndex: 4 })
 
 // Fetch example data.
 fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'examples/assets/0014/data.json')
